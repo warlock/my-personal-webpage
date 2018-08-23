@@ -9,9 +9,7 @@
         </div>
       </div>
       <div id="colorblock2" class="marginat">
-        <div class="presentacio"> 
-            {{ $t('presentacio') }}                   
-        </div>
+        <div class="presentacio">{{ $t('presentacio') }}</div>
       </div>
       <div id="colorblock6" class="marginat" >
         <div id="installproject">
@@ -48,33 +46,25 @@
       <div class="colorblock marginat">
         <div class="projects"  @click="openURL('http://spellbook.js.gl')">
           <div class="logoproject1"><img src="~/assets/img/spellbookwhite.svg" id="spellbook"></div>
-          <div class="text2">
-            {{ $t('spellbook') }}
-          </div>
+          <div class="text2">{{ $t('spellbook') }}</div>
         </div>
       </div> 
       <div class="colorblock marginat"> 
         <div class="projects" @click="openURL('https://snc.js.gl')">  
           <div class="logoproject2"><img src="~/assets/img/snc.svg" id="snc"></div>
-          <div class="text3">
-            {{ $t('snc') }}
-          </div>
+          <div class="text3">{{ $t('snc') }}</div>
         </div>
       </div>
       <div class="colorblock marginat"> 
         <div class="projects" @click="openURL('https://rxapi.js.gl')">   
           <div class="logoproject2"><img src="~/assets/img/rxapi.svg" id="rx"></div>
-          <div class="text3">
-            {{ $t('rxapi') }}
-          </div>
+          <div class="text3">{{ $t('rxapi') }}</div>
         </div>
       </div>
       <div class="colorblock marginat">   
         <div class="projects" @click="openURL('https://nexo.js.gl')">     
           <div class="logoproject2"><img src="~/assets/img/nexo.svg" id="nexo"></div>
-          <div class="text3">
-            {{ $t('nexo') }}
-          </div>
+          <div class="text3">{{ $t('nexo') }}</div>
         </div>
       </div>
     </div>
