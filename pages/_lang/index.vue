@@ -116,11 +116,11 @@ export default {
   flex-direction: row;
   align-items: stretch;
   justify-content:space-around;
+  flex-wrap: wrap;
 }
 
 .colum1,
-.colum2,
-.colum3 {
+.colum2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,19 +132,6 @@ export default {
   margin-bottom: 10px;
 }
 
-@media (max-width: 1024px) {
-  #main {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
-
-@media (min-width: 1025px) {
-  #main {
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-}
 /* Columna 1 */
 #colorblock1 {
   display: flex;
@@ -223,56 +210,6 @@ export default {
 .contacticons {
   width: 51.31px;
   height: 40.77px;
-}
-
-@media (max-width: 1024px) {
-  #colorblock2 {
-   order: 3;
-  }
-
-  #colorblock3 {
-    order: 2;
-  }
-
-  #colorblock6 {
-    order: 3;
-  }
-
-  .presentacio{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content:space-around;
-    color:  white;
-    padding: 40px;
-    font-family: 'bold';
-    font-size: 2em;
-  }
-}
-
-@media (min-width: 1025px) {
-  #colorblock2 {
-    order: 2;
-  }
-
-  #colorblock6 {
-    order: 3;
-  }
-
-  #colorblock3 {
-    order: 4;
-  }
-
-  .presentacio {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content:space-around;
-    color:  white;
-    padding: 40px;
-    font-family: 'bold';
-    font-size: 1.5em;
-  }
 }
 
 #colorblock6 {
@@ -376,6 +313,34 @@ export default {
 }
 
 @media (max-width: 1024px) {
+  #main {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #colorblock2 {
+   order: 3;
+  }
+
+  #colorblock3 {
+    order: 2;
+  }
+
+  #colorblock6 {
+    order: 3;
+  }
+
+  .presentacio{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content:space-around;
+    color:  white;
+    padding: 40px;
+    font-family: 'bold';
+    font-size: 2em;
+  }
+
   .text2 {
     color: white;
     font-family: 'medium';
@@ -384,6 +349,34 @@ export default {
 }
 
 @media (min-width: 1025px) {
+  #main {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  #colorblock2 {
+    order: 2;
+  }
+
+  #colorblock6 {
+    order: 3;
+  }
+
+  #colorblock3 {
+    order: 4;
+  }
+
+  .presentacio {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content:space-around;
+    color:  white;
+    padding: 40px;
+    font-family: 'bold';
+    font-size: 1.5em;
+  }
+
   .text2 {
     color: white;
     font-family: 'medium';

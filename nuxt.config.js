@@ -6,7 +6,7 @@ module.exports = {
     title: 'Josep Subils - Full Stack Javascript Developer',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, user-scalable=no' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
       { hid: 'description', name: 'description', content: 'My name is Josep Subils. I am a fullstack professional developer and programmer in JavaScript. Here you can find my personal projects and documentation.' },
       { hid: 'language', name: 'language', content: 'en,ca,es,ru' },
       { hid: 'keywords', name: 'keywords', content: 'javascript,html,tutorial,professional,developer,software,mobile,github,debian,linux,java' },
