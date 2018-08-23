@@ -14,7 +14,7 @@
       <div id="colorblock6" class="marginat" >
         <div id="installproject">
           <div id="textinstall">
-            <div class="text2">{{$t('source')}}</div>
+            <div class="text2">{{ $t('source') }}</div>
           </div>
           <div class="logoimg">
             <img src="~/assets/img/npm.svg" id="npm" @click="openURL('https://npmjs.com/~josep')">
