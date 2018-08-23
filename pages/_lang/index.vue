@@ -82,8 +82,6 @@
 </template>
 <script>
 
-import { mapActions } from 'vuex'
-
 export default {
   methods: {
     switchlang (lang) {
