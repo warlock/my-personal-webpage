@@ -46,4 +46,3 @@ module.exports = {
     routes: ['/', '/es', '/ca', '/ru', '/en']
   }
 }
-
