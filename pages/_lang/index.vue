@@ -1,6 +1,6 @@
 <template>
   <div id="mainbase">
-    <div class="colum1">
+    <div class="columns">
       <div id="colorblock1" class="marginat">
         <div id="logopjosep">
           <div class="jlogo">
@@ -44,7 +44,7 @@
         </div>
       </div>
     </div>
-    <div class="colum2">
+    <div class="columns">
       <div class="colorblock marginat">
         <div class="projects"  @click="openURL('http://spellbook.js.gl')">
           <div class="logoproject1"><img src="~/assets/img/spellbookwhite.svg" id="spellbook"></div>
@@ -119,12 +119,10 @@ export default {
   flex-wrap: wrap;
 }
 
-.colum1,
-.colum2 {
+.columns {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
 }
 
 .marginat {
@@ -132,7 +130,6 @@ export default {
   margin-bottom: 10px;
 }
 
-/* Columna 1 */
 #colorblock1 {
   display: flex;
   flex-direction: column;
@@ -264,17 +261,15 @@ export default {
   text-align: center;
 }
 
-/* Columna 2 */
-
 .colorblock {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 90%;
-  height: 100%;
   background-color: #67AF94;
   box-shadow: 5px 6px 45px -6px rgba(150,111,150,1);
+  padding: 0.5em;
 }
 
 .projects {
@@ -346,6 +341,10 @@ export default {
     font-family: 'medium';
     font-size: 2em; 
   }
+
+  .columns {
+    width: 100%;
+  }
 }
 
 @media (min-width: 1025px) {
@@ -366,6 +365,10 @@ export default {
     order: 4;
   }
 
+  .colorblock {
+    height: 100%;
+  }
+
   .presentacio {
     display: flex;
     flex-flow: column;
@@ -381,6 +384,10 @@ export default {
     color: white;
     font-family: 'medium';
     font-size: 1.5em; 
+  }
+
+  .columns {
+    width: 50%;
   }
 }
 
