@@ -10,7 +10,7 @@
       </div>
       <div id="colorblock2" class="marginat">
         <div class="presentacio"> 
-            {{$t('presentacio')}}                   
+            {{ $t('presentacio') }}                   
         </div>
       </div>
       <div id="colorblock6" class="marginat" >
@@ -49,31 +49,31 @@
         <div class="projects"  @click="openURL('http://spellbook.js.gl')">
           <div class="logoproject1"><img src="~/assets/img/spellbookwhite.svg" id="spellbook"></div>
           <div class="text2">
-            {{$t('spellbook')}}
+            {{ $t('spellbook') }}
           </div>
         </div>
       </div> 
       <div class="colorblock marginat"> 
         <div class="projects" @click="openURL('https://snc.js.gl')">  
           <div class="logoproject2"><img src="~/assets/img/snc.svg" id="snc"></div>
-          <div class="text2">
-            {{$t('snc')}}
+          <div class="text3">
+            {{ $t('snc') }}
           </div>
         </div>
       </div>
       <div class="colorblock marginat"> 
         <div class="projects" @click="openURL('https://rxapi.js.gl')">   
           <div class="logoproject2"><img src="~/assets/img/rxapi.svg" id="rx"></div>
-          <div class="text2">
-            {{$t('rxapi')}}
+          <div class="text3">
+            {{ $t('rxapi') }}
           </div>
         </div>
       </div>
       <div class="colorblock marginat">   
         <div class="projects" @click="openURL('https://nexo.js.gl')">     
           <div class="logoproject2"><img src="~/assets/img/nexo.svg" id="nexo"></div>
-          <div class="text2">
-            {{$t('nexo')}}
+          <div class="text3">
+            {{ $t('nexo') }}
           </div>
         </div>
       </div>
@@ -257,7 +257,7 @@ export default {
 .text2 {
   color:  white;
   font-family: 'bold';
-  font-size: 19px;
+  font-size: 1em;
   text-align: center;
 }
 
@@ -286,10 +286,10 @@ export default {
   justify-content: center;
 }
 
-.text2 {
+.text3 {
   color: white;
   font-family: 'medium';
-  font-size: 12px; 
+  font-size: 1em; 
 }
 
 .logoproject2{
@@ -333,13 +333,13 @@ export default {
     color:  white;
     padding: 40px;
     font-family: 'bold';
-    font-size: 2em;
+    font-size: 1em;
   }
 
   .text2 {
     color: white;
     font-family: 'medium';
-    font-size: 2em; 
+    font-size: 1em; 
   }
 
   .columns {
@@ -377,13 +377,13 @@ export default {
     color:  white;
     padding: 40px;
     font-family: 'bold';
-    font-size: 1.5em;
+    font-size: 1em;
   }
 
   .text2 {
     color: white;
     font-family: 'medium';
-    font-size: 1.5em; 
+    font-size: 1em; 
   }
 
   .columns {
