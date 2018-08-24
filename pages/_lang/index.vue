@@ -75,8 +75,12 @@
 export default {
   methods: {
     switchlang (lang) {
-      this.$i18n.locale = lang
-      this.$router.push(`/${lang}`)
+      if (this.$i18n.locale === lang) {
+        this.lang = true
+      } else {
+        this.$i18n.locale = lang
+        this.$router.push(`/${lang}`)
+      }
     },
     changelang () {
       this.lang = false
@@ -244,7 +248,7 @@ export default {
 
 .text2 {
   color:  white;
-  font-family: 'bold';
+  font-family: 'bold',Verdana, Tahoma, sans-serif;
   font-size: 1em;
   text-align: center;
 }
@@ -276,7 +280,7 @@ export default {
 
 .text3 {
   color: white;
-  font-family: 'medium';
+  font-family: 'medium',Verdana, Tahoma, sans-serif;
   font-size: 1em; 
 }
 
@@ -320,13 +324,13 @@ export default {
     justify-content:space-around;
     color:  white;
     padding: 40px;
-    font-family: 'bold';
+    font-family: 'bold',Verdana, Tahoma, sans-serif;
     font-size: 1em;
   }
 
   .text2 {
     color: white;
-    font-family: 'medium';
+    font-family: 'medium',Verdana, Tahoma, sans-serif;
     font-size: 1em; 
   }
 
@@ -364,13 +368,13 @@ export default {
     justify-content:space-around;
     color:  white;
     padding: 40px;
-    font-family: 'bold';
+    font-family: 'bold',Verdana, Tahoma, sans-serif;
     font-size: 1em;
   }
 
   .text2 {
     color: white;
-    font-family: 'medium';
+    font-family: 'medium',Verdana, Tahoma, sans-serif;
     font-size: 1em; 
   }
 

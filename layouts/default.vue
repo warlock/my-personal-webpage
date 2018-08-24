@@ -6,17 +6,17 @@
 
 <style>
 @font-face {
-  font-family: 'bold';
+  font-family: 'bold', Verdana, Tahoma, sans-serif;
   src: url('~/assets/fonts/bold.otf');
 }
 
 @font-face {
-  font-family: 'medium';
+  font-family: 'medium', Verdana, Tahoma, sans-serif;
   src: url('~/assets/fonts/medium.otf');
 }
 
 @font-face {
-  font-family: 'ligth';
+  font-family: 'ligth', Verdana, Tahoma, sans-serif;
   src: url('~/assets/fonts/ligth.otf');
 }
 
