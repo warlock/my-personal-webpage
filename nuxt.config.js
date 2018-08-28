@@ -42,10 +42,14 @@ module.exports = {
     middleware: 'i18n'
   },
   plugins: [
-    '~/plugins/i18n.js',
-    { src: '~plugins/ga.js', ssr: false }
+    '~/plugins/i18n.js'
   ],
   generate: {
     routes: ['/', '/es', '/ca', '/ru', '/en']
-  }
+  },
+  modules: [
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-124612662-1'
+    }]
+ ]
 }
